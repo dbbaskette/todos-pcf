@@ -3,6 +3,6 @@ applications:
   - name: todo-service
     memory: 1G
     routes: 
-    - route: todo-ui.vcap.me/api
+    - route: todo.vcap.me/api
     services:
     - mariadb-svc
