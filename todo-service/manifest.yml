@@ -2,12 +2,7 @@
 applications:
   - name: todo-service
     memory: 1G
-    buildpacks:
-    - java_buildpack_offline
-    path: target/app.jar
     routes: 
-    - route: todo-service.apps.pcfone.io/api
+    - route: todo-ui.vcap.me/api
     services:
-    - mysql
-    - rabbitmq
-    - metrics-endpoint-actuator-prometheus
+    - mariadb-svc

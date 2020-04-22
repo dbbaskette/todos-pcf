@@ -2,6 +2,7 @@
 applications:
   - name: todo-ui
     memory: 256M
-    random-route: true
+    routes: 
+    - route: todo-ui.vcap.me
     docker:
-      image: odedia/todos-ui
+      image: dbbaskette/todos-ui
